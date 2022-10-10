@@ -1,0 +1,6 @@
+-- Select PSF and model flux, and exetendedness parameter for all bands 
+
+SELECT objectId,coord_ra,coord_dec,g_base_ClassificationExtendedness_flag
+    ,g_base_ClassificationExtendedness_value,g_base_PsfFlux_instFlux,g_base_PsfFlux_instFluxErr
+    ,g_good,g_modelfit_CModel_instFlux,g_modelfit_CModel_instFluxErr
+FROM dp01_dc2_catalogs.forced_photometry
